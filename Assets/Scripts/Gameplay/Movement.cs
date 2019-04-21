@@ -45,7 +45,7 @@ public class Movement : MonoBehaviour
             CheckUserInput();
         }
 
-        Debug.Log(cantMove);
+       
 
     }
 

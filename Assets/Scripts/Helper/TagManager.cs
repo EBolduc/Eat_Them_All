@@ -10,6 +10,7 @@ public class TagManager
     public static string BORDER_LEFT_TAG = "BorderLeft";
     public static string BORDER_RIGHT_TAG = "BorderRight";
     public static string FOOD_TAG = "Food";
+    public static string LOOSE_TAG = "Lose";
 
     //STRING OBJECT NAME
     public static string BURGER_OBJECT = "Prefabs/Burger";

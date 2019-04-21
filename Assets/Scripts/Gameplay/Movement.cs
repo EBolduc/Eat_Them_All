@@ -41,7 +41,7 @@ public class Movement : MonoBehaviour
     {
         if (cantMove == false)
         {
-            //ObjectMovement();
+            
             CheckUserInput();
         }
 
@@ -49,40 +49,6 @@ public class Movement : MonoBehaviour
 
     }
 
-/*
-    void ObjectMovement()
-    {
-
-        float h = Input.GetAxisRaw("Horizontal");
-
-      
-
-        //go right
-        if (h > 0 && rightLimit == false)
-        {
-            myRigidBody.velocity = new Vector2(forwardSpeed, fallingSpeed);
-        }
-        //go left
-        else if (h < 0 && leftLimit == false)
-        {
-            myRigidBody.velocity = new Vector2(-forwardSpeed, fallingSpeed);
-        }
-        else
-        {
-            myRigidBody.velocity = new Vector2(0f, freeFallSpeed);
-        }
-
-        //rotate
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            GetComponent<Transform>().eulerAngles = new Vector3(0, 0, rotateZ - 90);
-            rotateZ = transform.eulerAngles.z;
-        }
-
-
-    }
-
-    */
 
     void CheckUserInput()
     {
@@ -105,15 +71,10 @@ public class Movement : MonoBehaviour
         }
     }
 
-    void SpawnNewObject()
-    {
-
-    }
-
-
+ 
     private void OnCollisionEnter2D(Collision2D target)
     {
-        //Add target tag all objects with colliders to stop the item movement
+        
         if ((target.collider.tag == TagManager.LEVEL_COLLIDER_TAG || target.collider.tag == TagManager.FOOD_TAG) &&  cantMove == false)
         {
             cantMove = true;

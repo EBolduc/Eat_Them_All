@@ -4,10 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Floor
   - BorderLeft
   - BorderRight
   - Food
+  - Collider_Level
   layers:
   - Default
   - TransparentFX

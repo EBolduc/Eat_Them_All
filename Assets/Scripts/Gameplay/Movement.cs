@@ -13,9 +13,11 @@ public class Movement : MonoBehaviour
     private float forwardSpeed = 5f;
     private Vector3 angleZ;
     private float rotateZ = 0;
+    public float fallingSpeed = -3f;
+    public float freeFallSpeead = -1f;
 
 
-    //other
+    //bool
     private bool cantMove = false;
     private bool leftLimit = false;
     private bool rightLimit = false;
@@ -49,19 +51,21 @@ public class Movement : MonoBehaviour
 
         float h = Input.GetAxisRaw("Horizontal");
 
+      
+
         //go right
         if (h > 0 && rightLimit == false)
         {
-            myRigidBody.velocity = new Vector2(forwardSpeed, myRigidBody.velocity.y);
+            myRigidBody.velocity = new Vector2(forwardSpeed, fallingSpeed);
         }
         //go left
         else if (h < 0 && leftLimit == false)
         {
-            myRigidBody.velocity = new Vector2(-forwardSpeed, myRigidBody.velocity.y);
+            myRigidBody.velocity = new Vector2(-forwardSpeed, fallingSpeed);
         }
         else
         {
-            myRigidBody.velocity = new Vector2(0f, myRigidBody.velocity.y);
+            myRigidBody.velocity = new Vector2(0f, freeFallSpeead);
         }
 
         //rotate
@@ -77,7 +81,8 @@ public class Movement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D target)
     {
-        if (target.collider.tag == TagManager.FLOOR_TAG)
+        //Add target tag all objects with colliders to stop the item movement
+        if (target.collider.tag == TagManager.LEVEL_COLLIDER_TAG)
         {
             cantMove = true;
         }
@@ -86,6 +91,7 @@ public class Movement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D target)
     {
+        
         if (target.tag == TagManager.BORDER_LEFT_TAG)
         {
             leftLimit = true;

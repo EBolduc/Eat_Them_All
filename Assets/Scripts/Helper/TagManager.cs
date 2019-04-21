@@ -6,9 +6,10 @@ public class TagManager
 {
 
     //TAG
-    public static string FLOOR_TAG = "Floor";
+    public static string LEVEL_COLLIDER_TAG = "Collider_Level";
     public static string BORDER_LEFT_TAG = "BorderLeft";
     public static string BORDER_RIGHT_TAG = "BorderRight";
+    public static string FOOD_TAG = "Food";
 
 
 

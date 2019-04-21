@@ -10,7 +10,7 @@ public class FrogMonsterTongueAnimationScript : MonoBehaviour
 
 
     void OnTriggerEnter2D(Collider2D target) {
-        if (target.tag == "Food") {
+        if (target.tag == TagManager.FOOD_TAG) {
             anim.Play("FrogTongueAnim");
             anim.Play("Idle");
         }

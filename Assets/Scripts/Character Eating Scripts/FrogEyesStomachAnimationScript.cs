@@ -14,7 +14,7 @@ public class FrogEyesStomachAnimationScript : MonoBehaviour
 
     IEnumerator FrogAnim() {
         yield return new WaitForSeconds(Random.Range(6f, 15f));
-        anim.Play("FrogDelayedAnim");
+        anim.Play(TagManager.FROG_DELAYED_ANIM);
 
         StartCoroutine(FrogAnim());
     }

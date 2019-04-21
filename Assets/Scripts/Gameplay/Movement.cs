@@ -13,8 +13,8 @@ public class Movement : MonoBehaviour
     private float forwardSpeed = 5f;
     private Vector3 angleZ;
     private float rotateZ = 0;
-    public float fallingSpeed = -3f;
-    public float freeFallSpeead = -1f;
+    public float fallingSpeed = -2.5f;
+    public float freeFallSpeed = -0.5f;
 
 
     //bool
@@ -33,7 +33,7 @@ public class Movement : MonoBehaviour
 
     void Start()
     {
-
+      //  StartCoroutine(SpawnDelay());
     }
 
 
@@ -41,11 +41,15 @@ public class Movement : MonoBehaviour
     {
         if (cantMove == false)
         {
-            ObjectMovement();
+            //ObjectMovement();
+            CheckUserInput();
         }
+
+        Debug.Log(cantMove);
+
     }
 
-
+/*
     void ObjectMovement()
     {
 
@@ -65,7 +69,7 @@ public class Movement : MonoBehaviour
         }
         else
         {
-            myRigidBody.velocity = new Vector2(0f, freeFallSpeead);
+            myRigidBody.velocity = new Vector2(0f, freeFallSpeed);
         }
 
         //rotate
@@ -78,15 +82,57 @@ public class Movement : MonoBehaviour
 
     }
 
+    */
+
+    void CheckUserInput()
+    {
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            myRigidBody.velocity = new Vector2(forwardSpeed, fallingSpeed);
+        }
+        else if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            myRigidBody.velocity = new Vector2(-forwardSpeed, fallingSpeed);
+        }
+        else if (Input.GetKeyDown(KeyCode.Space))
+        {
+            GetComponent<Transform>().eulerAngles = new Vector3(0, 0, rotateZ - 90);
+            rotateZ = transform.eulerAngles.z;
+        }
+        else if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            myRigidBody.velocity = new Vector2(0, fallingSpeed * 3);
+        }
+    }
+
+    void SpawnNewObject()
+    {
+
+    }
+
 
     private void OnCollisionEnter2D(Collision2D target)
     {
         //Add target tag all objects with colliders to stop the item movement
-        if (target.collider.tag == TagManager.LEVEL_COLLIDER_TAG)
+        if (target.collider.tag == TagManager.LEVEL_COLLIDER_TAG &&  cantMove == false)
         {
             cantMove = true;
+
+            FindObjectOfType<SpawnFood>().SpawnFoods();
+
         }
     }
+
+    /*
+    IEnumerator SpawnDelay()
+    {
+        if (cantMove == true)
+        {
+            yield return new WaitForSeconds(2f);
+            FindObjectOfType<SpawnFood>().SpawnFoods();
+        }
+    }
+    */
 
 
     private void OnTriggerEnter2D(Collider2D target)

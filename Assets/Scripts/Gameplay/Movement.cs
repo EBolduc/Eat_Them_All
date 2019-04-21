@@ -33,7 +33,7 @@ public class Movement : MonoBehaviour
 
     void Start()
     {
-      //   StartCoroutine(SpawnDelay());
+      
     }
 
 
@@ -114,25 +114,25 @@ public class Movement : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D target)
     {
         //Add target tag all objects with colliders to stop the item movement
-        if (target.collider.tag == TagManager.LEVEL_COLLIDER_TAG &&  cantMove == false)
+        if ((target.collider.tag == TagManager.LEVEL_COLLIDER_TAG || target.collider.tag == TagManager.FOOD_TAG) &&  cantMove == false)
         {
             cantMove = true;
 
-            FindObjectOfType<SpawnFood>().SpawnFoods();
+            StartCoroutine(SpawnDelay());
 
         }
     }
 
-    /*
+    
     IEnumerator SpawnDelay()
     {
         if (cantMove == true)
         {
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(1f);
             FindObjectOfType<SpawnFood>().SpawnFoods();
         }
     }
-    */
+    
 
 
     private void OnTriggerEnter2D(Collider2D target)

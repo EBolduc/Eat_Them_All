@@ -613,36 +613,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 669766973}
---- !u!1 &805394428
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 805394429}
-  m_Layer: 8
-  m_Name: DragonFly
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &805394429
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 805394428}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.24, y: -5.120519, z: -9.970274}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &956450622
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -909,7 +879,7 @@ PrefabInstance:
     - target: {fileID: 6749611416093075606, guid: cb643c564e55fb2419240e28feb696e3,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6749611416093075563, guid: cb643c564e55fb2419240e28feb696e3,
         type: 3}
@@ -949,7 +919,7 @@ PrefabInstance:
     - target: {fileID: 6749611416093075563, guid: cb643c564e55fb2419240e28feb696e3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6749611416093075563, guid: cb643c564e55fb2419240e28feb696e3,
         type: 3}
@@ -1256,6 +1226,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken
       objectReference: {fileID: 0}
+    - target: {fileID: 3269779237837877121, guid: 9f0c0a8b898bed04e917bac29b19d494,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3273323736703712395, guid: 9f0c0a8b898bed04e917bac29b19d494,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1294,7 +1269,7 @@ PrefabInstance:
     - target: {fileID: 3273323736703712395, guid: 9f0c0a8b898bed04e917bac29b19d494,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3273323736703712395, guid: 9f0c0a8b898bed04e917bac29b19d494,
         type: 3}
@@ -1435,6 +1410,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPositionFoodX: -1
   startPositionFoodY: 20
+  foods:
+  - {fileID: 1329207157502227281, guid: 140f0197e75e7944ab43f88bf095f207, type: 3}
+  - {fileID: 8644775804933527457, guid: 377ca11f1d3bd6345afc3a4d8290f59f, type: 3}
+  - {fileID: 3107836468807611008, guid: 1364efe8f42ae64408f0445d896e0c11, type: 3}
+  - {fileID: 3269779237837877121, guid: 9f0c0a8b898bed04e917bac29b19d494, type: 3}
+  - {fileID: 6749611416093075606, guid: cb643c564e55fb2419240e28feb696e3, type: 3}
 --- !u!1 &2020611611
 GameObject:
   m_ObjectHideFlags: 0

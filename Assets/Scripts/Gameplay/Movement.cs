@@ -4,17 +4,20 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+
+   
+
     //Gameobject
     private Rigidbody2D myRigidBody;
     private BoxCollider2D myBoxCollier;
 
     //movement
-    [SerializeField]
-    private float forwardSpeed = 5f;
+   
+    private float forwardSpeed = 10f;
     private Vector3 angleZ;
     private float rotateZ = 0;
-    public float fallingSpeed = -2.5f;
-    public float freeFallSpeed = -0.5f;
+    private float fallingSpeed = -2.5f;
+    //public float freeFallSpeed = -0.5f;
 
 
     //bool
@@ -28,7 +31,6 @@ public class Movement : MonoBehaviour
         myRigidBody = GetComponent<Rigidbody2D>();
         myBoxCollier = GetComponent<BoxCollider2D>();
         angleZ = GetComponent<Transform>().eulerAngles;
-
     }
 
     void Start()
@@ -44,9 +46,6 @@ public class Movement : MonoBehaviour
             
             CheckUserInput();
         }
-
-       
-
     }
 
 
@@ -54,7 +53,7 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            myRigidBody.velocity = new Vector2(forwardSpeed, fallingSpeed);
+             myRigidBody.velocity = new Vector2(forwardSpeed, fallingSpeed);
         }
         else if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
@@ -67,7 +66,7 @@ public class Movement : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-            myRigidBody.velocity = new Vector2(0, fallingSpeed * 3);
+            myRigidBody.velocity = new Vector2(0, fallingSpeed * 15);
         }
     }
 
@@ -90,40 +89,11 @@ public class Movement : MonoBehaviour
         if (cantMove == true)
         {
             yield return new WaitForSeconds(1f);
-            FindObjectOfType<SpawnFood>().SpawnFoods();
+            
+            FindObjectOfType<SpawnFood>().StartSpawningFood();
         }
     }
     
-
-
-    private void OnTriggerEnter2D(Collider2D target)
-    {
-        
-        if (target.tag == TagManager.BORDER_LEFT_TAG)
-        {
-            leftLimit = true;
-        }
-
-        if (target.tag == TagManager.BORDER_RIGHT_TAG)
-        {
-            rightLimit = true;
-        }
-
-    }
-
-    private void OnTriggerExit2D(Collider2D target)
-    {
-        if (target.tag == TagManager.BORDER_LEFT_TAG)
-        {
-            leftLimit = false;
-        }
-
-        if (target.tag == TagManager.BORDER_RIGHT_TAG)
-        {
-            rightLimit = false;
-        }
-    }
-
 }
 
 

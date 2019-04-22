@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 6749611416093075604}
   - component: {fileID: 6749611416093075605}
   - component: {fileID: 6749611416093075562}
+  - component: {fileID: 7951512899602977762}
+  - component: {fileID: 3100586400078256796}
   m_Layer: 0
   m_Name: Fly
   m_TagString: Food
@@ -26,13 +28,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6749611416093075606}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 1.1, y: 7.4, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!212 &6749611416093075604
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -645,3 +647,27 @@ PolygonCollider2D:
       - {x: 1.0075, y: 5.210625}
       - {x: 0.97, y: 5.1356254}
       - {x: 0.9325, y: 4.9856253}
+--- !u!114 &7951512899602977762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6749611416093075606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e16a12e68fa8694099e3342048b7de5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3100586400078256796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6749611416093075606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 783bcbd15c83ea4469ceb9a03e5b1c6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

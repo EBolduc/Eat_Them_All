@@ -13,9 +13,11 @@ public class TagManager
     public static string LOOSE_TAG = "Lose";
 
     //STRING OBJECT NAME
-    public static string BURGER_OBJECT = "Prefabs/Burger";
-    public static string BREAD_OBJECT = "Prefabs/Bread";
-    public static string CHICKEN_OBJECT = "Prefabs/Chicken";
+    public static string BURGER_OBJECT = "Food Prefabs/Burger";
+    public static string BREAD_OBJECT = "Food Prefabs/Bread";
+    public static string CHICKEN_OBJECT = "Food Prefabs/Chicken";
+    public static string BOMB_OBJECT = "Food Prefabs/Bomb";
+    public static string FLY_OBJECT = "Food Prefabs/Fly";
 
 
     //ANIMATION

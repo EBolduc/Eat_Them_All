@@ -2,17 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class SpawnFood : MonoBehaviour
 {
 
-    
-
     public float startPositionFoodX = 0.35f;
-    public float startPositionFoodY = 1f;
+    public float startPositionFoodY = 2f;
+
+    public GameObject[] foods;
 
     void Start()
     {
-        SpawnFoods();
+       StartSpawningFood();
     }
 
     void Update()
@@ -20,36 +21,11 @@ public class SpawnFood : MonoBehaviour
         
     }
 
-
-    public void SpawnFoods ()
+    public void StartSpawningFood()
     {
-        GameObject nextFood = (GameObject)Instantiate(Resources.Load(GetRandomFood(), typeof(GameObject)), new Vector2(startPositionFoodX, startPositionFoodY), Quaternion.identity);
+        Instantiate(foods[Random.Range(0, foods.Length)],
+        new Vector3(startPositionFoodX, startPositionFoodY, 0f), Quaternion.identity);
     }
-
-
-    string GetRandomFood()
-    {
-        int randomFood = Random.Range(1, 4);
-
-        string randomFoodName = "Prefabs/Burger";
-
-        switch (randomFood)
-        {
-            case 1:
-                randomFoodName = "Prefabs/Burger";
-                break;
-            case 2:
-                randomFoodName = "Prefabs/Bread";
-                break;
-            case 3:
-                randomFoodName = "Prefabs/Chicken";
-                break;
-        }
-
-        return randomFoodName;
-
-    }
-
 
 
 }

@@ -18,7 +18,7 @@ public class BombScript : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(hasExplode);
+       
     }
 
     public void OnTriggerEnter2D(Collider2D target)

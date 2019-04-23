@@ -9,6 +9,7 @@ TagManager:
   - Food
   - Collider_Level
   - Lose
+  - Flame
   layers:
   - Default
   - TransparentFX

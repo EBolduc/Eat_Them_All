@@ -11,6 +11,7 @@ public class TagManager
     public static string BORDER_RIGHT_TAG = "BorderRight";
     public static string FOOD_TAG = "Food";
     public static string LOOSE_TAG = "Lose";
+    public static string FLAME_TAG = "Flame";
 
     //STRING OBJECT NAME
     public static string BURGER_OBJECT = "Food Prefabs/Burger";
@@ -20,10 +21,11 @@ public class TagManager
     public static string FLY_OBJECT = "Food Prefabs/Fly";
 
 
-    //ANIMATION
+    //ANIMATION AND TRIGGER
     public static string TONGUE_ANIM = "FrogTongueAnim";
     public static string IDLE_EYES_STOMACH_ANIM = "IdleEyesStomach";
     public static string FROG_DELAYED_ANIM = "FrogDelayedAnim";
+    public static string FLAME_PARAMETER = "Flame";
 
 
 }

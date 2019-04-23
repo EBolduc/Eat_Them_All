@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 6749611416093075605}
   - component: {fileID: 6749611416093075562}
   - component: {fileID: 7951512899602977762}
-  - component: {fileID: 3100586400078256796}
   m_Layer: 0
   m_Name: Fly
   m_TagString: Food
@@ -657,17 +656,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e16a12e68fa8694099e3342048b7de5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3100586400078256796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6749611416093075606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 783bcbd15c83ea4469ceb9a03e5b1c6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

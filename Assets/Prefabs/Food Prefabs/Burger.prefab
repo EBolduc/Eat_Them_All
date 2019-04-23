@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 3108272420866628959}
   - component: {fileID: 3108272420866628952}
   - component: {fileID: 3108272420866628953}
-  - component: {fileID: 3549593704836238368}
   m_Layer: 0
   m_Name: Burger
   m_TagString: Food
@@ -142,20 +141,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e16a12e68fa8694099e3342048b7de5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forwardSpeed: 5
-  fallingSpeed: -2.5
-  freeFallSpeed: -0.5
---- !u!114 &3549593704836238368
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3107836468807611008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 783bcbd15c83ea4469ceb9a03e5b1c6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

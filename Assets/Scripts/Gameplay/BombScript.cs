@@ -8,6 +8,11 @@ public class BombScript : MonoBehaviour
     private bool hasExplode;
     private GameObject[] food;
 
+    public GameObject bomb;
+
+    public float power = 10.0f;
+    public float radius = 5.0f;
+    public float upForce = 1.0f;
 
     void Awake()
     {
@@ -16,10 +21,44 @@ public class BombScript : MonoBehaviour
        
     }
 
+    private void FixedUpdate()
+    {
+        if(bomb == enabled)
+        {
+            Invoke("Detonate", 5);
+        }
+    }
+
     private void Update()
     {
-       
+        print(hasExplode);
+
+        if (hasExplode == true)
+        {
+           
+            print("it was a great Bomb");
+        }
+
     }
+
+
+
+    void Detonate()
+    {
+        Vector3 explosionPosion = bomb.transform.position;
+        Collider[] colliders = Physics.OverlapSphere(explosionPosion, radius);
+        
+        foreach(Collider hit in colliders)
+        {
+            Rigidbody2D rb = hit.GetComponent<Rigidbody2D>();
+            if(rb!=null)
+            rb.AddExplosionForce(power, explosionPosion, radius, upForce,ForceMode2D.Impulse);
+
+            
+        }
+
+    }
+
 
     public void OnTriggerEnter2D(Collider2D target)
     {
@@ -40,22 +79,7 @@ public class BombScript : MonoBehaviour
 
     }
 
-    //DOES NOT WORK
-    public void OnCollisionStay2D(Collision2D target)
-    {
-        if(target.collider.tag == TagManager.FOOD_TAG)
-        {
-            if (hasExplode == true)
-            {
-                RaycastHit hitInfo = new RaycastHit();
-               
-                
-                    hitInfo.transform.gameObject.SetActive(false);
-                
-                  //  transform.gameObject.SetActive(false);
-            }
-        }
-    }
+   
 
-    
+
 }

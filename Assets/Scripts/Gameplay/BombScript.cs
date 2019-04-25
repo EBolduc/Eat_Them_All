@@ -42,7 +42,7 @@ public class BombScript : MonoBehaviour
     }
 
 
-
+    //DON'T WORK AGAIN, might maybe put that function in a separate script attached to the bomb
     void Detonate()
     {
         Vector3 explosionPosion = bomb.transform.position;

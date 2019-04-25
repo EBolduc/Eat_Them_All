@@ -1103,11 +1103,11 @@ MonoBehaviour:
   startPositionFoodX: -1
   startPositionFoodY: 20
   foods:
-  - {fileID: 7228910779961957504, guid: bc706119d9939ac46a2f7e62324f6f6e, type: 3}
-  - {fileID: 8644775804933527457, guid: 377ca11f1d3bd6345afc3a4d8290f59f, type: 3}
   - {fileID: 3107836468807611008, guid: 1364efe8f42ae64408f0445d896e0c11, type: 3}
-  - {fileID: 2132773311976909189, guid: 87245368e2c2e4e4ca68f3509f67882a, type: 3}
+  - {fileID: 8644775804933527457, guid: 377ca11f1d3bd6345afc3a4d8290f59f, type: 3}
   - {fileID: 6749611416093075606, guid: cb643c564e55fb2419240e28feb696e3, type: 3}
+  - {fileID: 2132773311976909189, guid: 87245368e2c2e4e4ca68f3509f67882a, type: 3}
+  - {fileID: 7228910779961957504, guid: bc706119d9939ac46a2f7e62324f6f6e, type: 3}
 --- !u!1 &2020611611
 GameObject:
   m_ObjectHideFlags: 0

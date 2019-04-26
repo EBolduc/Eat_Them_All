@@ -23,7 +23,7 @@ public class TagManager
 
     //ANIMATION AND TRIGGER
     public static string TONGUE_ANIM = "FrogTongueAnim";
-    public static string IDLE_EYES_STOMACH_ANIM = "IdleEyesStomach";
+    public static string IDLE_TONGUE_ANIM = "IdleTongue";
     public static string FROG_DELAYED_ANIM = "FrogDelayedAnim";
     public static string FLAME_PARAMETER = "Flame";
 

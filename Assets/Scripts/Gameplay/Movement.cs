@@ -53,16 +53,16 @@ public class Movement : MonoBehaviour
     {
         
         //RIGHT
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow))
         {
              myRigidBody.velocity = new Vector2(forwardSpeed, fallingSpeed);
         }
-        if (Input.GetKeyUp(KeyCode.RightArrow))
+        else if (Input.GetKeyUp(KeyCode.RightArrow))
         {
             myRigidBody.velocity = new Vector2(0, fallingSpeed);
         }
         //LEFT
-        else if (Input.GetKeyDown(KeyCode.LeftArrow))
+        else if (Input.GetKey(KeyCode.LeftArrow))
         {
             myRigidBody.velocity = new Vector2(-forwardSpeed, fallingSpeed);
         }

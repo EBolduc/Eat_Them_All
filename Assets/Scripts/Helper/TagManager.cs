@@ -12,6 +12,8 @@ public class TagManager
     public static string FOOD_TAG = "Food";
     public static string LOOSE_TAG = "Lose";
     public static string FLAME_TAG = "Flame";
+    public static string WORM_TAG = "Worm";
+    public static string SCARABE_TAG = "Scarabe";
 
     //STRING OBJECT NAME
     public static string BURGER_OBJECT = "Food Prefabs/Burger";

@@ -10,6 +10,8 @@ TagManager:
   - Collider_Level
   - Lose
   - Flame
+  - Scarabe
+  - Worm
   layers:
   - Default
   - TransparentFX

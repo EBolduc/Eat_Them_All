@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -4068384940290874026}
   m_Layer: 0
   m_Name: Scarabe
-  m_TagString: Food
+  m_TagString: Scarabe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

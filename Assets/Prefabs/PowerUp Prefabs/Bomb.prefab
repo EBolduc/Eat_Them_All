@@ -265,6 +265,7 @@ GameObject:
   - component: {fileID: 8060058382520226174}
   - component: {fileID: 1717474265487986495}
   - component: {fileID: 6301976850965572980}
+  - component: {fileID: 248588196748563350}
   m_Layer: 0
   m_Name: Radius
   m_TagString: Bomb
@@ -301,7 +302,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.06, y: -0.63}
   serializedVersion: 2
-  m_Radius: 1.29
+  m_Radius: 2.59
 --- !u!114 &6301976850965572980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -320,4 +321,25 @@ MonoBehaviour:
     type: 3}
   flyBody: {fileID: 5952734701540911319, guid: cb643c564e55fb2419240e28feb696e3, type: 3}
   bombBody: {fileID: 4459781722316496430}
-  bombAnim: {fileID: 3156256642729395238}
+  anim: {fileID: 3156256642729395238}
+--- !u!50 &248588196748563350
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4306887331055859567}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

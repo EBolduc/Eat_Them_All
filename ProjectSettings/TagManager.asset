@@ -12,6 +12,7 @@ TagManager:
   - Flame
   - Scarabe
   - Worm
+  - Bomb
   layers:
   - Default
   - TransparentFX

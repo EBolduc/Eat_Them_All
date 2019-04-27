@@ -14,6 +14,7 @@ public class TagManager
     public static string FLAME_TAG = "Flame";
     public static string WORM_TAG = "Worm";
     public static string SCARABE_TAG = "Scarabe";
+    public static string BOMB_TAG = "Bomb";
 
     //STRING OBJECT NAME
     public static string BURGER_OBJECT = "Food Prefabs/Burger";

@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class BombScript : MonoBehaviour
 {
+
     public static BombScript instance;
     private Animator anim;
     public bool hasExplode;
     private GameObject[] food;
+    
+    
     
      
     void Awake()
@@ -21,8 +24,10 @@ public class BombScript : MonoBehaviour
 
     private void Update()
     {
-       
+        
     }
+
+    
 
 
     void OnDisable()

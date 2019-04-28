@@ -155,6 +155,9 @@ TextureImporter:
   - first:
       213: 740038872085583909
     second: Flame(5)
+  - first:
+      213: 4205568142720749839
+    second: Bomb(16)
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -1115,6 +1118,27 @@ TextureImporter:
       bones: []
       spriteID: ea148e90c29139d428361ebab3b0459f
       internalID: 740038872085583909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb(16)
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 34
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 737a3f872a06d9d47b0d5f24daa31d38
+      internalID: 4205568142720749839
       vertices: []
       indices: 
       edges: []

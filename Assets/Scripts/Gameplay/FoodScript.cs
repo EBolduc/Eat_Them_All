@@ -5,7 +5,8 @@ using UnityEngine;
 public class FoodScript : MonoBehaviour
 {
 
-    float minY = -25f;
+   public float minY = -25f;
+   public float maxY = 25f;
 
     // Start is called before the first frame update
     void Start()
@@ -16,7 +17,8 @@ public class FoodScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y <= minY) {
+        //|| transform.position.y >=maxY
+        if (transform.position.y <= minY ) {
             gameObject.SetActive(false);
         }
     }

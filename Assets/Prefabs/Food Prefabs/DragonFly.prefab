@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2244645438934784045}
   - component: {fileID: 3052707400155705564}
-  - component: {fileID: 8563772627115042514}
   - component: {fileID: 2437093014016943513}
   - component: {fileID: 3095434671521731476}
+  - component: {fileID: 8563772627115042514}
   - component: {fileID: -4919428624429223535}
   m_Layer: 0
   m_Name: DragonFly
@@ -85,18 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8563772627115042514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3322190802693861029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e16a12e68fa8694099e3342048b7de5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &2437093014016943513
 Rigidbody2D:
   serializedVersion: 4
@@ -218,6 +206,18 @@ PolygonCollider2D:
       - {x: -0.265, y: 1.18}
       - {x: -0.275, y: 1.2099999}
       - {x: -0.305, y: 1.2099999}
+--- !u!114 &8563772627115042514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3322190802693861029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e16a12e68fa8694099e3342048b7de5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &-4919428624429223535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,6 +230,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5362a2d12c4901408825248a82f9c38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minY: -25
+  maxY: 25
 --- !u!1 &5063089588841589851
 GameObject:
   m_ObjectHideFlags: 0

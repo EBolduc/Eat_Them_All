@@ -28,13 +28,21 @@ public class BombScript : MonoBehaviour
         {
             anim.SetBool(TagManager.FLAME_PARAMETER, true);
             hasExplode = true;
-           
+
+            StartCoroutine(BombDeactivate());
         }
+
+       
     }
 
-   
+    IEnumerator BombDeactivate()
+    {
+        yield return new WaitForSeconds(1.5f);
 
-    
-   
+        this.transform.parent.gameObject.SetActive(false);
+    }
+
+
+
 
 }

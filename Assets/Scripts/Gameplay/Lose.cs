@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class Lose : MonoBehaviour
 {
-    private bool canLose = false;
+    public float minY = -25f;
+    public float maxY = 25f;
+
+    static public bool canLose = false;
     private float timeTriggered = 0f;
 
   
@@ -26,6 +29,14 @@ public class Lose : MonoBehaviour
         if (target.tag == TagManager.FOOD_TAG)
         {
             print("GAME OVER!!");
+        }
+    }
+
+    private void DeactivateObject()
+    {
+        if (transform.position.y <= minY)
+        {
+            gameObject.SetActive(false);
         }
     }
 

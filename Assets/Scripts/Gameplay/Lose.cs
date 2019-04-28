@@ -5,38 +5,59 @@ using UnityEngine;
 public class Lose : MonoBehaviour
 {
     public float minY = -25f;
-    public float maxY = 25f;
+    public float maxY = 21f;
 
-    static public bool canLose = false;
+    private GameObject bomb;
+    private GameObject food;
+
+    static public bool canLose = true;
     private float timeTriggered = 0f;
 
   
 
     void Awake()
     {
-       
+        bomb = GameObject.FindWithTag(TagManager.BOMB_TAG);
+        bomb = GameObject.FindWithTag(TagManager.FOOD_TAG);
     }
 
     
     void Update()
     {
-        
+        print("canLose : " + canLose);
+        LoseByBomb();
     }
 
 
     private void OnTriggerEnter2D(Collider2D target)
     {
-        if (target.tag == TagManager.FOOD_TAG)
+        if ((target.tag == TagManager.FOOD_TAG ||
+            target.tag == TagManager.WORM_TAG 
+            ) &&
+            canLose == true)
         {
-            print("GAME OVER!!");
+            print("GAME OVER!!!");
+            Time.timeScale = 0f;
         }
     }
 
     private void DeactivateObject()
     {
-        if (transform.position.y <= minY)
+        if (food.transform.position.y <= minY || food.transform.position.y >=maxY)
         {
-            gameObject.SetActive(false);
+            food.SetActive(false);
+        }
+    }
+
+    private void LoseByBomb()
+    {
+        if (bomb != null)
+        {
+            if (bomb.transform.position.y < -25f && canLose == true)
+            {
+                print("GAME OVER!!!");
+                Time.timeScale = 0f;
+            }
         }
     }
 

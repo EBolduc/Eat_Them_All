@@ -380,7 +380,7 @@ GameObject:
   - component: {fileID: 3103821657804534702}
   m_Layer: 0
   m_Name: Worm
-  m_TagString: Food
+  m_TagString: Worm
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

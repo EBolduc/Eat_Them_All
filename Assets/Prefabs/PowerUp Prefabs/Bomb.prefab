@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 4528723605136478235}
   m_Layer: 0
   m_Name: Bomb
-  m_TagString: Bomb
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -309,6 +309,7 @@ MonoBehaviour:
   anim: {fileID: 3156256642729395238}
   powerX: 3
   powerY: 1
+  propulseCollider: {fileID: 0}
 --- !u!50 &248588196748563350
 Rigidbody2D:
   serializedVersion: 4

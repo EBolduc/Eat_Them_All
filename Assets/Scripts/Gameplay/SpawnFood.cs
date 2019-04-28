@@ -6,8 +6,8 @@ using UnityEngine;
 public class SpawnFood : MonoBehaviour
 {
 
-    public float startPositionFoodX = 0.35f;
-    public float startPositionFoodY = 2f;
+    public float startPositionFoodX = -1f;
+    public float startPositionFoodY = 20f;
 
     public GameObject[] foods;
 

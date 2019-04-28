@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class BombScript : MonoBehaviour
 {
-    static public bool hasExplode;
-    private Animator anim;
     
+    private Animator anim;
+
+   
     
     void Awake()
     {
@@ -16,7 +17,7 @@ public class BombScript : MonoBehaviour
 
     private void start()
     {
-        hasExplode = false;
+        
     }
     
     // maybe need USE SINGLETONto keep the variable hasexplode
@@ -27,7 +28,8 @@ public class BombScript : MonoBehaviour
         if(target.tag == TagManager.FLAME_TAG)
         {
             anim.SetBool(TagManager.FLAME_PARAMETER, true);
-            hasExplode = true;
+
+            
 
             StartCoroutine(BombDeactivate());
         }

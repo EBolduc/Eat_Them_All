@@ -11,6 +11,8 @@ public class TagManager
     public static string BORDER_RIGHT_TAG = "BorderRight";
     public static string FOOD_TAG = "Food";
     public static string LOOSE_TAG = "Lose";
+    public static string MIN_Y = "MinY";
+    public static string MAX_Y = "MaxY";
     public static string FLAME_TAG = "Flame";
     public static string WORM_TAG = "Worm";
     public static string SCARABE_TAG = "Scarabe";

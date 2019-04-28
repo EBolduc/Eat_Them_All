@@ -13,6 +13,8 @@ TagManager:
   - Scarabe
   - Worm
   - Bomb
+  - MinY
+  - MaxY
   layers:
   - Default
   - TransparentFX

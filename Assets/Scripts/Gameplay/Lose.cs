@@ -25,6 +25,7 @@ public class Lose : MonoBehaviour
     void Update()
     {
         print("canLose : " + canLose);
+        SetCanLoseTrue();
         LoseByBomb();
     }
 
@@ -32,8 +33,7 @@ public class Lose : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D target)
     {
         if ((target.tag == TagManager.FOOD_TAG ||
-            target.tag == TagManager.WORM_TAG 
-            ) &&
+            target.tag == TagManager.WORM_TAG ) &&
             canLose == true)
         {
             print("GAME OVER!!!");
@@ -41,14 +41,14 @@ public class Lose : MonoBehaviour
         }
     }
 
-    private void DeactivateObject()
+  /*  private void DeactivateObject()
     {
         if (food.transform.position.y <= minY || food.transform.position.y >=maxY)
         {
             food.SetActive(false);
         }
     }
-
+*/
     private void LoseByBomb()
     {
         if (bomb != null)
@@ -60,6 +60,44 @@ public class Lose : MonoBehaviour
             }
         }
     }
+
+
+
+    void SetCanLoseTrue()
+    {
+        if (Lose.canLose == false)
+        {
+            print("lose is false");
+            StartCoroutine(CanLoseTiming());
+        }
+        else if (Lose.canLose == true)
+        {
+            print("coroutine stopped");
+            StopCoroutine(CanLoseTiming());
+        }
+
+        IEnumerator CanLoseTiming()
+        {
+            yield return new WaitForSeconds(5f);
+            print("Lose is getting true");
+            Lose.canLose = true;
+
+
+        }
+    }
+
+   
+
+
+
+
+
+
+
+
+
+
+
 
     /*
         private void OnTriggerExit2D(Collider2D target)

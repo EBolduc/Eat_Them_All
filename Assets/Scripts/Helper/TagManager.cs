@@ -16,6 +16,7 @@ public class TagManager
     public static string LOOSE_TAG = "Lose";
     public static string MIN_Y = "MinY";
     public static string MAX_Y = "MaxY";
+    public static string SPAWN_DETECTOR_TAG = "SpawnDetector";
     public static string WORM_TAG = "Worm";
     public static string SCARABE_TAG = "Scarabe";
     

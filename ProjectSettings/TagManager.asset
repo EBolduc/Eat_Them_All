@@ -16,6 +16,7 @@ TagManager:
   - MinY
   - MaxY
   - DeactivateLine
+  - SpawnDetector
   layers:
   - Default
   - TransparentFX

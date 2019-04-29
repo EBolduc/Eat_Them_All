@@ -29,7 +29,7 @@ public class BombRadius : MonoBehaviour
 
         if (anim.GetBool(TagManager.FLAME_TAG) == true)
         {
-            //propulseCollider.SetActive(true);
+            Lose.canLose = true;
 
             if (target.tag == TagManager.FOOD_TAG || 
                 target.tag == TagManager.WORM_TAG ||

@@ -24,7 +24,7 @@ public class Lose : MonoBehaviour
     
     void Update()
     {
-        print("canLose : " + canLose);
+        
         SetCanLoseTrue();
         LoseByBomb();
     }
@@ -55,7 +55,7 @@ public class Lose : MonoBehaviour
         {
             if (bomb.transform.position.y < -25f && canLose == true)
             {
-                print("GAME OVER!!!");
+                
                 Time.timeScale = 0f;
             }
         }
@@ -67,19 +67,19 @@ public class Lose : MonoBehaviour
     {
         if (Lose.canLose == false)
         {
-            print("lose is false");
+            
             StartCoroutine(CanLoseTiming());
         }
         else if (Lose.canLose == true)
         {
-            print("coroutine stopped");
+            
             StopCoroutine(CanLoseTiming());
         }
 
         IEnumerator CanLoseTiming()
         {
             yield return new WaitForSeconds(5f);
-            print("Lose is getting true");
+            
             Lose.canLose = true;
 
 

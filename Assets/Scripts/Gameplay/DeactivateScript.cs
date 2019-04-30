@@ -33,6 +33,7 @@ public class DeactivateScript : MonoBehaviour
         if (target.tag == TagManager.DEACTIVATE_LINE_TAG && Lose.canLose == false)
         {
             gameObject.SetActive(false);
+            SpawnFood.instance.SpawnForSpawnSecurity();
         }
     }
 

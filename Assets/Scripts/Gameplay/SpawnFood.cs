@@ -65,24 +65,29 @@ public class SpawnFood : MonoBehaviour
 
     void SpawnNewFood() {
         int currentFoodArrayIndex;
-        if (System.Array.IndexOf(foods,selectedFood) < foods.Length)
+        if (System.Array.IndexOf(foods, selectedFood) <= foods.Length - 1)
         {
-            
-            
+
+
             currentFoodArrayIndex = System.Array.IndexOf(foods, selectedFood);
             currentFoodArrayIndex++;
-          
+            if (!foods[currentFoodArrayIndex].activeInHierarchy && currentFoodArrayIndex <= foods.Length)
+
+
+            {
                 currentFoodArrayIndex++;
                 selectedFood = foods[currentFoodArrayIndex];
 
                 selectedFood.transform.position = new Vector2(startPositionFoodX, startPositionFoodY);
                 selectedFood.SetActive(true);
-            
-        }
-        else {
-            selectedFood = foods[0];
-            selectedFood.transform.position = new Vector2(startPositionFoodX, startPositionFoodY);
-            selectedFood.SetActive(true);
+            }
+
+            else
+            {
+                selectedFood = foods[0];
+                selectedFood.transform.position = new Vector2(startPositionFoodX, startPositionFoodY);
+                selectedFood.SetActive(true);
+            }
         }
     }
 

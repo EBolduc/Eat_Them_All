@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpawnSecurity : MonoBehaviour
 {
-
+/*
     
     private float timeElapsed;
     private bool newObject;
@@ -59,5 +59,42 @@ public class SpawnSecurity : MonoBehaviour
             SpawnFood.instance.StartSpawningFood();
         }
     }
+  
+    
+     
+     
+     
+     
+     */
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}//class

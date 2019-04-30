@@ -78,7 +78,7 @@ public class Lose : MonoBehaviour
 
         IEnumerator CanLoseTiming()
         {
-            yield return new WaitForSeconds(5f);
+            yield return new WaitForSeconds(50f);
             
             Lose.canLose = true;
 

@@ -5,9 +5,10 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
 
-   
+
 
     //Gameobject
+    GameObject currentObject;
     private Rigidbody2D myRigidBody;
     private BoxCollider2D myBoxCollier;
 
@@ -31,6 +32,7 @@ public class Movement : MonoBehaviour
         myRigidBody = GetComponent<Rigidbody2D>();
         myBoxCollier = GetComponent<BoxCollider2D>();
         angleZ = GetComponent<Transform>().eulerAngles;
+        currentObject = GetComponent<GameObject>();
     }
 
     void Start()
@@ -88,10 +90,10 @@ public class Movement : MonoBehaviour
 
     }
 
- 
+
     private void OnCollisionEnter2D(Collision2D target)
     {
-
+        if (currentObject = SpawnFood.instance.selectedFood)
         if ((target.collider.tag == TagManager.LEVEL_COLLIDER_TAG ||
              target.collider.tag == TagManager.BOMB_TAG ||
              target.collider.tag == TagManager.WORM_TAG || 
@@ -100,12 +102,22 @@ public class Movement : MonoBehaviour
         {
             cantMove = true;
 
-            StartCoroutine(SpawnDelay());
+            PrepareNextFood();
+
+            //StartCoroutine(SpawnDelay());---------------------------------------------
 
         }
     }
 
-    
+
+
+
+
+    void PrepareNextFood() {
+        SpawnFood.instance.SpawnForSpawnSecurity();
+    }
+
+ /* -----------------------------------------------------------  
     IEnumerator SpawnDelay()
     {
         if (cantMove == true)
@@ -115,8 +127,35 @@ public class Movement : MonoBehaviour
             FindObjectOfType<SpawnFood>().StartSpawningFood();
         }
     }
-    
-}
+--------------------------------------------------------------*/    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}//class
 
 
 

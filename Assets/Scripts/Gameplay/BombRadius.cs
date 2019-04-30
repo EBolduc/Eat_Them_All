@@ -7,7 +7,7 @@ public class BombRadius : MonoBehaviour
 
     [SerializeField] Rigidbody2D wormBody, scarabeBody, flyBody, bombBody;
     [SerializeField] Animator anim;
-    public float powerX = 3f, powerY = 1f;
+    public float powerX = .5f, powerY = .5f;
 
    
 

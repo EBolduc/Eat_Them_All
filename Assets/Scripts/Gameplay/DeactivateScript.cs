@@ -17,6 +17,7 @@ public class DeactivateScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         if (Lose.canLose == false)
         {
             if (transform.position.y <= minY || transform.position.y >= maxY)
@@ -24,6 +25,7 @@ public class DeactivateScript : MonoBehaviour
                 gameObject.SetActive(false);
             }
         }
+        */
     }
 
     private void OnTriggerEnter(Collider target)

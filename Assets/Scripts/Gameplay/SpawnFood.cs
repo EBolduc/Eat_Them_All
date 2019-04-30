@@ -71,11 +71,14 @@ public class SpawnFood : MonoBehaviour
             
             currentFoodArrayIndex = System.Array.IndexOf(foods, selectedFood);
             currentFoodArrayIndex++;
-            selectedFood = foods[currentFoodArrayIndex];
-            
+            if (!foods[currentFoodArrayIndex].activeInHierarchy)
+            {
+                currentFoodArrayIndex++;
+                selectedFood = foods[currentFoodArrayIndex];
+
                 selectedFood.transform.position = new Vector2(startPositionFoodX, startPositionFoodY);
                 selectedFood.SetActive(true);
-            
+            }
         }
         else {
             selectedFood = foods[0];

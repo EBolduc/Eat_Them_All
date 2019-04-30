@@ -71,7 +71,7 @@ public class SpawnFood : MonoBehaviour
 
             currentFoodArrayIndex = System.Array.IndexOf(foods, selectedFood);
             currentFoodArrayIndex++;
-            if (!foods[currentFoodArrayIndex].activeInHierarchy && currentFoodArrayIndex <= foods.Length)
+            if (!foods[currentFoodArrayIndex].activeInHierarchy && currentFoodArrayIndex <= foods.Length - 1)
 
 
             {

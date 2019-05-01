@@ -9,6 +9,14 @@ TagManager:
   - Food
   - Collider_Level
   - Lose
+  - Flame
+  - Scarabe
+  - Worm
+  - Bomb
+  - MinY
+  - MaxY
+  - DeactivateLine
+  - SpawnDetector
   layers:
   - Default
   - TransparentFX
@@ -18,7 +26,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - foods
   - 
   - 
   - 
@@ -45,4 +53,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Worm
+    uniqueID: 1936049715
     locked: 0

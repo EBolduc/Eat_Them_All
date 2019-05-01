@@ -11,6 +11,7 @@ public class SpawnFood : MonoBehaviour
 
     public GameObject selectedFood;
     public GameObject[] foods;
+    public int currentFoodArrayIndex;
     int prefabCount = 56;
 
     void Awake()
@@ -63,37 +64,30 @@ public class SpawnFood : MonoBehaviour
 
   
 
-    void SpawnNewFood() {
-        int currentFoodArrayIndex;
-        if (System.Array.IndexOf(foods, selectedFood) <= foods.Length - 1)
+    public void SpawnNewFood() {
+
+        if (currentFoodArrayIndex < foods.Length - 1)
         {
-
-
-            currentFoodArrayIndex = System.Array.IndexOf(foods, selectedFood);
             currentFoodArrayIndex++;
-            if (!foods[currentFoodArrayIndex].activeInHierarchy && currentFoodArrayIndex <= foods.Length - 1)
 
-
-            {
-                currentFoodArrayIndex++;
+            if (!foods[currentFoodArrayIndex].activeInHierarchy) {
                 selectedFood = foods[currentFoodArrayIndex];
-
-                selectedFood.transform.position = new Vector2(startPositionFoodX, startPositionFoodY);
-                selectedFood.SetActive(true);
+                foods[currentFoodArrayIndex].transform.position = new Vector2(startPositionFoodX, startPositionFoodY);
+                foods[currentFoodArrayIndex].SetActive(true);
             }
 
-            else
+
+        } else
+        {
+            selectedFood = foods[0];
+            currentFoodArrayIndex = 0;
+            if (!foods[currentFoodArrayIndex].activeInHierarchy)
             {
-                selectedFood = foods[0];
-                selectedFood.transform.position = new Vector2(startPositionFoodX, startPositionFoodY);
-                selectedFood.SetActive(true);
+                foods[currentFoodArrayIndex].transform.position = new Vector2(startPositionFoodX, startPositionFoodY);
+                foods[currentFoodArrayIndex].SetActive(true);
             }
+            
         }
-    }
-
-    public void SpawnForSpawnSecurity()
-    {
-        SpawnNewFood();
     }
 
 

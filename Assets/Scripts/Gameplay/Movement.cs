@@ -32,7 +32,7 @@ public class Movement : MonoBehaviour
         myRigidBody = GetComponent<Rigidbody2D>();
         myBoxCollier = GetComponent<BoxCollider2D>();
         angleZ = GetComponent<Transform>().eulerAngles;
-        currentObject = GetComponent<GameObject>();
+        currentObject = gameObject.GetComponent<GameObject>();
     }
 
     void Start()
@@ -93,28 +93,34 @@ public class Movement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D target)
     {
-        if (currentObject = SpawnFood.instance.selectedFood)
-        if ((target.collider.tag == TagManager.LEVEL_COLLIDER_TAG ||
-             target.collider.tag == TagManager.BOMB_TAG ||
-             target.collider.tag == TagManager.WORM_TAG || 
-             target.collider.tag == TagManager.FOOD_TAG) && 
-             cantMove == false)
+
+            if ((target.collider.tag == TagManager.LEVEL_COLLIDER_TAG ||
+                 target.collider.tag == TagManager.BOMB_TAG ||
+                 target.collider.tag == TagManager.WORM_TAG ||
+                 target.collider.tag == TagManager.FOOD_TAG) &&
+                 cantMove == false)
+            {
+
+                cantMove = true;
+                PrepareNextFood();
+            }
+        
+    }
+
+    private void OnTriggerEnter2D(Collider2D target)
+    {
+        if (target.tag == TagManager.MAX_Y)
         {
-            cantMove = true;
-
+            
+            gameObject.SetActive(false);
             PrepareNextFood();
-
-            //StartCoroutine(SpawnDelay());---------------------------------------------
-
         }
     }
 
 
 
-
-
     void PrepareNextFood() {
-        SpawnFood.instance.SpawnForSpawnSecurity();
+        SpawnFood.instance.SpawnNewFood();
     }
 
  /* -----------------------------------------------------------  

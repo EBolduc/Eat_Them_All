@@ -102,25 +102,30 @@ public class Movement : MonoBehaviour
             {
 
                 cantMove = true;
-                PrepareNextFood();
+            StartCoroutine(() => PrepareNextFoodDelay());
             }
         
     }
-
+/*
     private void OnTriggerEnter2D(Collider2D target)
     {
         if (target.tag == TagManager.MAX_Y)
         {
             
             gameObject.SetActive(false);
-            PrepareNextFood();
+            //PrepareNextFood();
         }
     }
-
+*/
 
 
     void PrepareNextFood() {
         SpawnFood.instance.SpawnNewFood();
+    }
+
+    IEnumerator PrepareNextFoodDelay() {
+        yield return new WaitForSeconds(1f);
+        PrepareNextFood();
     }
 
  /* -----------------------------------------------------------  

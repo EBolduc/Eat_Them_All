@@ -63,7 +63,7 @@ public class SpawnFood : MonoBehaviour
     }
 
   
-
+    
     public void SpawnNewFood() {
 
         if (currentFoodArrayIndex < foods.Length - 1)
@@ -90,7 +90,7 @@ public class SpawnFood : MonoBehaviour
         }
     }
 
-
+    
 
     /*------------------------------------------------------------------
         public void StartSpawningFood()

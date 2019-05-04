@@ -102,7 +102,7 @@ public class Movement : MonoBehaviour
             {
 
                 cantMove = true;
-            StartCoroutine(() => PrepareNextFoodDelay());
+            StartCoroutine(PrepareNextFoodDelay());
             }
         
     }

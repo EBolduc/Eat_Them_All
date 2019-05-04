@@ -25,7 +25,6 @@ public class BombRadius : MonoBehaviour
     {
         if (anim.GetBool(TagManager.FLAME_TAG) == true)
         {
-            Lose.canLose = true;
 
             if (target.tag == TagManager.FOOD_TAG || 
                 target.tag == TagManager.WORM_TAG ||
@@ -39,7 +38,6 @@ public class BombRadius : MonoBehaviour
             {
                 yield return new WaitForSeconds(1f);
                 target.attachedRigidbody.AddRelativeForce(new Vector2(powerX, powerY), ForceMode2D.Impulse);
-                Lose.canLose = false;
             }
         }
     }

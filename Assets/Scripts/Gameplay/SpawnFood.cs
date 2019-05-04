@@ -9,7 +9,7 @@ public class SpawnFood : MonoBehaviour
 
     public float startPositionFoodX = -1f, startPositionFoodY = 20f;
 
-    public GameObject selectedFood;
+    public GameObject selectedFood, nextFood;
     public GameObject[] foods;
     public int currentFoodArrayIndex;
     int prefabCount = 56;

@@ -4189,7 +4189,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499730605}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.24, y: -15.76, z: 0.16146368}
+  m_LocalPosition: {x: -1.24, y: -15.92, z: 0.16146368}
   m_LocalScale: {x: 35.8, y: 1.9, z: 1}
   m_Children: []
   m_Father: {fileID: 1402401800}
@@ -5540,6 +5540,7 @@ MonoBehaviour:
   startPositionFoodX: -1
   startPositionFoodY: 20
   selectedFood: {fileID: 995061116}
+  nextFood: {fileID: 1811235544}
   foods:
   - {fileID: 995061116}
   - {fileID: 1811235544}

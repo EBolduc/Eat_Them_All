@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3103821656925982294}
   m_Layer: 0
   m_Name: Worm_1
-  m_TagString: Food
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 3103821657453421570}
   m_Layer: 0
   m_Name: Worm_2
-  m_TagString: Food
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -253,7 +253,7 @@ GameObject:
   - component: {fileID: 3103821657621204377}
   m_Layer: 0
   m_Name: Worm_0
-  m_TagString: Food
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -4,28 +4,17 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-
-
-
     //Gameobject
     GameObject currentObject;
     private Rigidbody2D myRigidBody;
     private BoxCollider2D myBoxCollier;
 
     //movement
-   
-    private float forwardSpeed = 10f;
     private Vector3 angleZ;
-    private float rotateZ = 0;
-    private float fallingSpeed = -2.5f;
-    //public float freeFallSpeed = -0.5f;
-
+    private float rotateZ = 0, fallingSpeed = -2.5f, forwardSpeed = 10f;
 
     //bool
-    private bool cantMove = false;
-    private bool leftLimit = false;
-    private bool rightLimit = false;
-
+    private bool cantMove = false, leftLimit = false, rightLimit = false;
 
     void Awake()
     {
@@ -35,17 +24,10 @@ public class Movement : MonoBehaviour
         currentObject = gameObject.GetComponent<GameObject>();
     }
 
-    void Start()
-    {
-      
-    }
-
-
     void Update()
     {
         if (cantMove == false)
         {
-            
             CheckUserInput();
         }
     }
@@ -53,7 +35,6 @@ public class Movement : MonoBehaviour
 
     void CheckUserInput()
     {
-        
         //RIGHT
         if (Input.GetKey(KeyCode.RightArrow))
         {
@@ -87,37 +68,20 @@ public class Movement : MonoBehaviour
         {
             myRigidBody.velocity = new Vector2(0, fallingSpeed);
         }
-
     }
-
 
     private void OnCollisionEnter2D(Collision2D target)
     {
-
             if ((target.collider.tag == TagManager.LEVEL_COLLIDER_TAG ||
                  target.collider.tag == TagManager.BOMB_TAG ||
                  target.collider.tag == TagManager.WORM_TAG ||
                  target.collider.tag == TagManager.FOOD_TAG) &&
                  cantMove == false)
             {
-
                 cantMove = true;
             StartCoroutine(PrepareNextFoodDelay());
             }
-        
     }
-/*
-    private void OnTriggerEnter2D(Collider2D target)
-    {
-        if (target.tag == TagManager.MAX_Y)
-        {
-            
-            gameObject.SetActive(false);
-            //PrepareNextFood();
-        }
-    }
-*/
-
 
     void PrepareNextFood() {
         SpawnFood.instance.SpawnNewFood();
@@ -127,18 +91,7 @@ public class Movement : MonoBehaviour
         yield return new WaitForSeconds(1f);
         PrepareNextFood();
     }
-
- /* -----------------------------------------------------------  
-    IEnumerator SpawnDelay()
-    {
-        if (cantMove == true)
-        {
-            yield return new WaitForSeconds(1f);
-            
-            FindObjectOfType<SpawnFood>().StartSpawningFood();
-        }
-    }
---------------------------------------------------------------*/    
+  
 
 
 

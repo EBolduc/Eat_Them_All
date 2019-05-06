@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 
 public class SpawnFood : MonoBehaviour
 {
     public static SpawnFood instance;
+
+    [SerializeField] Image nextItemImage;
+
 
     public float startPositionFoodX = -1f, startPositionFoodY = 20f;
 
@@ -49,6 +52,9 @@ public class SpawnFood : MonoBehaviour
             foods[i].SetActive(false);
         }
         selectedFood = foods[0];
+        int nextItemArray = currentFoodArrayIndex++;
+        Sprite sourceImage = foods[nextItemArray].GetComponent<SpriteRenderer>().sprite;
+        nextItemImage.sprite = sourceImage;
         selectedFood.transform.position = new Vector2(startPositionFoodX, startPositionFoodY);
         selectedFood.SetActive(true);
     }
@@ -72,6 +78,12 @@ public class SpawnFood : MonoBehaviour
 
             if (!foods[currentFoodArrayIndex].activeInHierarchy) {
                 selectedFood = foods[currentFoodArrayIndex];
+                int nextItemArray = currentFoodArrayIndex++;
+                if (!foods[nextItemArray].activeInHierarchy)
+                {
+                    Sprite sourceImage = foods[nextItemArray].GetComponent<SpriteRenderer>().sprite;
+                    nextItemImage.sprite = sourceImage;
+                }
                 foods[currentFoodArrayIndex].transform.position = new Vector2(startPositionFoodX, startPositionFoodY);
                 foods[currentFoodArrayIndex].SetActive(true);
             }
@@ -81,8 +93,12 @@ public class SpawnFood : MonoBehaviour
         {
             selectedFood = foods[0];
             currentFoodArrayIndex = 0;
+
             if (!foods[currentFoodArrayIndex].activeInHierarchy)
             {
+                int nextItemArray = currentFoodArrayIndex++;
+                Sprite sourceImage = foods[nextItemArray].GetComponent<SpriteRenderer>().sprite;
+                nextItemImage.sprite = sourceImage;
                 foods[currentFoodArrayIndex].transform.position = new Vector2(startPositionFoodX, startPositionFoodY);
                 foods[currentFoodArrayIndex].SetActive(true);
             }

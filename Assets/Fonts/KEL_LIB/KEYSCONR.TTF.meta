@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 86bd8a789249f11488eb7393155ffd66
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Keys Condensed
+  fontNames:
+  - Keys Condensed
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 77f49717c4d268f4eb712893cc7c793e, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 87acee601254e244a8a67b70e33251b0
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Lechter Thin
+  fontNames:
+  - Lechter Thin
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 14342c83ca3de1643bb0738af5fd4db1, type: 3}
+  - {fileID: 12800000, guid: 0c018aa4779a2a34983444d3a4e8b918, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

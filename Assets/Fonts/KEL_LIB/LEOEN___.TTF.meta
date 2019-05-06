@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 371fa71f90a84e84bbf5469be3f77c62
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Leo Extended
+  fontNames:
+  - Leo Extended
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 1cf5efa0fe4ea78458e2dfaa275b35a4, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

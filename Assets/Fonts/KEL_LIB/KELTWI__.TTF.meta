@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 89d1a722a6d0da8449303cb54f18b3b0
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Kelt Wide
+  fontNames:
+  - Kelt Wide
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 83c296c9f871e1b4bba6719cd778cbb3, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

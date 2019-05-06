@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 7331a0c4aa3763b42b9e7f9a140658c9
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Kelt Condensed
+  fontNames:
+  - Kelt Condensed
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 6563aff160e4ba64a9a7eaf4c865b356, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

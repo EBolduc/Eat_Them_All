@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 935a8754ccfd0f741b7fa90f098d89f8
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Kelt Extended
+  fontNames:
+  - Kelt Extended
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 0f1cbb81199876348a5a92273050cf3c, type: 3}
+  - {fileID: 12800000, guid: 68ed79ae5722cbf498d20fa2194651f4, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

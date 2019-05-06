@@ -7,11 +7,11 @@ public class SpawnFood : MonoBehaviour
 {
     public static SpawnFood instance;
 
-    public float startPositionFoodX = -1f, startPositionFoodY = 20f;
+    public float startPositionFoodX = -1f, startPositionFoodY = 20f, nextFoodStartPosX, nextFoodStartPosY;
 
     public GameObject selectedFood, nextFood;
     public GameObject[] foods;
-    public int currentFoodArrayIndex;
+    public int currentFoodArrayIndex, nextFoodArrayIndex;
     int prefabCount = 56;
 
     void Awake()
@@ -50,6 +50,10 @@ public class SpawnFood : MonoBehaviour
         }
         selectedFood = foods[0];
         selectedFood.transform.position = new Vector2(startPositionFoodX, startPositionFoodY);
+        selectedFood.SetActive(true);
+        nextFoodArrayIndex = currentFoodArrayIndex++;
+        selectedFood = foods[nextFoodArrayIndex];
+        selectedFood.transform.position = new Vector2(nextFoodStartPosX, nextFoodStartPosY);
         selectedFood.SetActive(true);
     }
 

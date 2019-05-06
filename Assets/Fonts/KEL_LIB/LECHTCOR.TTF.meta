@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: febbb8e4e9d53014aa908f68dd47eab9
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Lechter Condensed
+  fontNames:
+  - Lechter Condensed
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: b856283a01c172548b8c4718a7b2b2d7, type: 3}
+  - {fileID: 12800000, guid: 12f7ebad5a7b73740b792b343630b71b, type: 3}
+  - {fileID: 12800000, guid: 7d8c173f65d86724783ca1cb0bcbccbd, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

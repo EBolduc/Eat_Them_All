@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: b41cada952b50d34fb0c5e8e10eef0e9
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Lechter
+  fontNames:
+  - Lechter
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 7d20f817d6dae744b95be474301cec55, type: 3}
+  - {fileID: 12800000, guid: 6105bec8abf496f428f7affecc7ae888, type: 3}
+  - {fileID: 12800000, guid: 7ef437edd683a1b49984bf93aa2d13fd, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: ec80336e2ff856641ac2c0f71a4dc5c0
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Liberate Extended
+  fontNames:
+  - Liberate Extended
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 699d4cadf9850ba4eb99e946c7f7c0ab, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

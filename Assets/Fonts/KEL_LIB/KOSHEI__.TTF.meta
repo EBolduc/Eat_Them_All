@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: eeac70c9c095f1e4b908e404e47be70c
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Kosher Extended
+  fontNames:
+  - Kosher Extended
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 8b861feb36355d8418f7916228ba0d95, type: 3}
+  - {fileID: 12800000, guid: d96c6d2c9a069404296747067aaa3b1c, type: 3}
+  - {fileID: 12800000, guid: 8b081c7e4d429b441b66775d14e5f994, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

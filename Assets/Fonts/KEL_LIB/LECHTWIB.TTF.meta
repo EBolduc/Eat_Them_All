@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: cd4d2597c30fc9c4ea4db84eb2a8da3a
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Lechter Wide
+  fontNames:
+  - Lechter Wide
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 801579527ab37554bb3f7b253d60d63a, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

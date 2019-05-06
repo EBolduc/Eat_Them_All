@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: dfc726dc61b9d5b4881483255fcbf0c6
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Leo
+  fontNames:
+  - Leo
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: c960431a37f5c0e469c55208c2009f4c, type: 3}
+  - {fileID: 12800000, guid: 77a3a1ca063dfc541bd0fa403a704f01, type: 3}
+  - {fileID: 12800000, guid: 7344efcc12812b943b776ed1759d965f, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

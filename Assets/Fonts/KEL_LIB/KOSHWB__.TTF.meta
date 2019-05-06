@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: e7e39280e79e5534a9557f80ff191340
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Kosher Wide
+  fontNames:
+  - Kosher Wide
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 992dc0127f010c54caaa96483c1649cc, type: 3}
+  - {fileID: 12800000, guid: e02c0a8b3cf073142b920f1ae51dc7aa, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

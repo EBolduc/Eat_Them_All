@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: ce840f1d03b06ac4c98055d4c974da5c
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Kelt Thin
+  fontNames:
+  - Kelt Thin
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 13e9ee141fd82c648b4dee2e2e5b4408, type: 3}
+  - {fileID: 12800000, guid: 698bdc78fb5106e4db3fd76ee601af39, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 94da5b3f6b5580a4b82a51695f9e8132
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Leo Condensed
+  fontNames:
+  - Leo Condensed
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 52bf0603facccf0419500ec76d293890, type: 3}
+  - {fileID: 12800000, guid: 253542f510d21f14580ffe916c312c98, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

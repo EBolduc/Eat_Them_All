@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 440f19adee6ce1c41a9ebfad76dda66d
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Leo Wide
+  fontNames:
+  - Leo Wide
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 06250c85a612e974c90b7d8aada61642, type: 3}
+  - {fileID: 12800000, guid: 0cf22c3d10b89864b84561dc293f8428, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

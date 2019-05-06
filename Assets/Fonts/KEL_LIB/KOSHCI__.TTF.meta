@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: b09817c36f95b30438a9819588e935df
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Kosher Condensed
+  fontNames:
+  - Kosher Condensed
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 16cded9aeba1386458620df87085316c, type: 3}
+  - {fileID: 12800000, guid: a733009c929f58e4cb5d54acb03dfa31, type: 3}
+  - {fileID: 12800000, guid: 418176be072d29b468adf172e7236382, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

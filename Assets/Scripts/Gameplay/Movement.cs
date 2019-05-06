@@ -53,20 +53,16 @@ public class Movement : MonoBehaviour
         {
             myRigidBody.velocity = new Vector2(0, fallingSpeed);
         }
-        //TURN
-        else if (Input.GetKeyDown(KeyCode.Space))
-        {
-            GetComponent<Transform>().eulerAngles = new Vector3(0, 0, rotateZ - 90);
-            rotateZ = transform.eulerAngles.z;
-        }
+
         //DOWN
         else if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-            myRigidBody.velocity = new Vector2(0, fallingSpeed * 15);
+            GetComponent<Transform>().eulerAngles = new Vector3(0, 0, rotateZ + 90);
+            rotateZ = transform.eulerAngles.z;
         }
         else if (Input.GetKeyUp(KeyCode.DownArrow))
         {
-            myRigidBody.velocity = new Vector2(0, fallingSpeed);
+            myRigidBody.velocity = new Vector2(0, fallingSpeed * 2);
         }
     }
 
